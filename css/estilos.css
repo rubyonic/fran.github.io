@@ -459,8 +459,8 @@ p{
         position: relative;
         display: flex;
         justify-content: space-between;
-        width: 50%; /* Ajusta según el tamaño que prefieras */
-        margin: 0 auto; /* Centra la barra */
+        width: 50%; 
+        margin: 0 auto; 
         margin-bottom: 40px;
     }
     
@@ -479,43 +479,96 @@ p{
         cursor: grab;
     }
     
-    /* En la página del juego 1 */
+
     .pagina-juego1 .heroes {
         left: -10;
     }
     
-    /* En la página del juego 2 */
+
     .pagina-juego2 .heroes {
-        left: calc(12.5% * 1); /* Movemos el héroe al cuadro 2 */
+        left: calc(12.5% * 1);
     }
     
-    /* En la página del juego 3 */
+
     .pagina-juego3 .heroes {
-        left: calc(12.3% * 2); /* Movemos el héroe al cuadro 3 */
+        left: calc(12.3% * 2); 
     }
     
-    /* En la página del juego 4 */
+
     .pagina-juego4 .heroes {
-        left: calc(12.5% * 3); /* Movemos el héroe al cuadro 4 */
+        left: calc(12.5% * 3);
     }
     
-    /* En la página del juego 5 */
+
     .pagina-juego5 .heroes {
-        left: calc(12.5% * 4); /* Movemos el héroe al cuadro 5 */
+        left: calc(12.5% * 4); 
     }
     
-    /* En la página del juego 6 */
+
     .pagina-juego6 .heroes {
-        left: calc(13.3% * 5); /* Movemos el héroe al cuadro 6 */
+        left: calc(13.3% * 5);
     }
     
-    /* En la página del juego 7 */
+
     .pagina-juego7 .heroes {
-        left: calc(13.3% * 6); /* Movemos el héroe al cuadro 7 */
+        left: calc(13.3% * 6); 
     }
     
-    /* En la página del juego 8 */
+
     .pagina-juego8 .heroes {
-        left: calc(13.3% * 7); /* Movemos el héroe al cuadro 8 */
+        left: calc(13.3% * 7); 
+    }
+    
+    @media (max-width: 600px) {
+        .logo {
+            font-size: 1.5rem;
+        }
+    
+        .navegador {
+            flex-direction: column;
+        }
+    
+        .navegador-menu {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .navegador-menu li {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+    
+        .imagen img, .imagen-historia img {
+            width: 100%;
+        }
+    
+        .seccion-historia {
+            padding: 20px;
+        }
+    
+        .boton {
+            width: 100px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        #seccion1, #seccion2, #seccion3 {
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        .texto-izq, .texto-der, .imagen {
+            padding: 0;
+        }
+    
+        .navegador-menu {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .navegador-menu li {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
     }
     
